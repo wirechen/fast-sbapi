@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+
+    <!--控制台日志-->
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %d - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <!--&lt;!&ndash;INFO日志&ndash;&gt;-->
+    <!--<appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+        <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+            <!--<level>ERROR</level>-->
+            <!--<onMatch>DENY</onMatch>-->
+            <!--<onMismatch>ACCEPT</onMismatch>-->
+        <!--</filter>-->
+        <!--<encoder>-->
+            <!--<pattern>-->
+                <!--%msg%n-->
+            <!--</pattern>-->
+        <!--</encoder>-->
+        <!--&lt;!&ndash;滚动策略&ndash;&gt;-->
+        <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+            <!--&lt;!&ndash;路径&ndash;&gt;-->
+            <!--<fileNamePattern>/var/log/tomcat/fast-sbapi/info.%d.log</fileNamePattern>-->
+            <!--&lt;!&ndash; 日志保留天数&ndash;&gt;-->
+            <!--<MaxHistory>20</MaxHistory>-->
+        <!--</rollingPolicy>-->
+    <!--</appender>-->
+
+    <!--&lt;!&ndash;ERROR日志&ndash;&gt;-->
+    <!--<appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+        <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+            <!--<level>ERROR</level>-->
+        <!--</filter>-->
+        <!--<encoder>-->
+            <!--<pattern>-->
+                <!--%msg%n-->
+            <!--</pattern>-->
+        <!--</encoder>-->
+        <!--&lt;!&ndash;滚动策略&ndash;&gt;-->
+        <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+            <!--&lt;!&ndash;路径&ndash;&gt;-->
+            <!--<fileNamePattern>/var/log/tomcat/fast-sbapi/error.%d.log</fileNamePattern>-->
+            <!--&lt;!&ndash; 日志保留天数&ndash;&gt;-->
+            <!--<MaxHistory>20</MaxHistory>-->
+        <!--</rollingPolicy>-->
+    <!--</appender>-->
+
+    <springProfile name="dev">
+        <root level="INFO">
+            <appender-ref ref="consoleLog" />
+        </root>
+    </springProfile>
+
+    <!--<springProfile name="prod">-->
+        <!--<root level="INFO">-->
+            <!--<appender-ref ref="consoleLog" />-->
+            <!--<appender-ref ref="fileInfoLog" />-->
+            <!--<appender-ref ref="fileErrorLog" />-->
+        <!--</root>-->
+    <!--</springProfile>-->
+
+</configuration>

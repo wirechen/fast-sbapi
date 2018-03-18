@@ -1,0 +1,17 @@
+server:
+  context-path: /api/v1
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: buzhidao
+    url: jdbc:mysql://localhost/fastsbapiDB?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  # 404 交给异常处理器处理
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
