@@ -16,8 +16,8 @@ fast-sbapi是基于纯Spring Boot框架打造的快速构建Resultul API的项�
 * 集成swaggerAPI文档
 * 升级Spring Boot2.0
 
-## 项目结构  
-![](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-tree.png?Expires=1521360645&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=%2FPNWSIVgUfnavQ5X4EhUjj7RBEw%3D =500x630)
+## 项目结构  
+<img src="http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-tree.png?Expires=1521360645&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=%2FPNWSIVgUfnavQ5X4EhUjj7RBEw%3D" width=400 height=520 />
 
 - aspect: AOP切面类
 - config: 项目配置
