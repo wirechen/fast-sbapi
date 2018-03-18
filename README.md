@@ -17,7 +17,8 @@ fast-sbapi是基于纯Spring Boot框架打造的快速构建Resultul API的项�
 * 升级Spring Boot2.0
 
 ## 项目结构  
-![](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-tree.png?Expires=1521355378&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=mzRbQ4zoUEp%2Fr97OzPDJXYnGpFM%3D)
+![](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-tree.png?Expires=1521360645&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=%2FPNWSIVgUfnavQ5X4EhUjj7RBEw%3D)
+>>>>>>> 6815a1111f6eed85edd460f449f5e27347422315
 
 - aspect: AOP切面类
 - config: 项目配置
@@ -38,7 +39,7 @@ fast-sbapi是基于纯Spring Boot框架打造的快速构建Resultul API的项�
 
 ## 项目模型  
 这里主要对dataobejct的各个object的转化与传输做了一个模型。既然选择了用java开发API,那么我们必然是看中了java的严谨与高可维护性,java向来也不是快速开发的主导,项目中各种obejct的之间的相互转换看似繁琐复杂,但不可否认的是这样做为后期的维护与扩展打下了良好的基础。  
-![](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-dataobject.png?Expires=1521357946&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=IUwJZz5UgHKFF5XazgBV%2BScOQWE%3D)
+![](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-dataobject.png?Expires=1521421872&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=SrRef4eSm5dEvcJsaRb8sU2RnXQ%3D)
 前端请求接口时传输RO(request object),在Controller层对RO进行转化（根据业务需求转为DTO或者直接转为Model）,Service层将DTO转为Model并传输给Repository层,Repository层作为数据的仓库必然只能与Model打交道。响应时Controller层应该对DTO或者Model做VO(view object)的转化，VO可以满足前端各种不同的格式的需求,Model层应该与数据库表严格一一对应。
 
 ## 快速开始
@@ -50,3 +51,4 @@ fast-sbapi是基于纯Spring Boot框架打造的快速构建Resultul API的项�
 
 ## Lisence  
 无，纯粹开源分享，感谢大家 [Star](https://github.com/wirechen/fast-sbapi/stargazers) & [Fork](https://github.com/wirechen/fast-sbapi/network) 的支持。
+
