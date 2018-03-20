@@ -8,7 +8,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 * 统一响应结果封装  
 * 统一异常处理
 * 简单的普通用户登录注册
-* 基于JWT的接口权限认证
+* 基于[JWT](https://www.jianshu.com/p/576dbf44b2ae)的接口权限认证
 * 基于logback的生产环境日志按天滚动记录
 * 常用基础方法抽象封装
 > TODO
