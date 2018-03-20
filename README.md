@@ -1,10 +1,10 @@
 ## 简介  
-FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。目前发布1.0版本，该仓库长期维护，也欢迎大家提出issue或提交pr，旨在为java开发API的大众提供一个不错的选择。  
+FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。目前发布1.0版本，该仓库长期维护，也欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)，旨在为Java开发API的大众提供一个不错的选择。  
 
 ## 功能  
 > 已实现
 * ***通过可视化脚手架一键生成SQL脚本、dataobject、repository、service及controller***
-* 最具java风格的项目结构、配置文件、精简的POM
+* 最具Java风格的项目结构、配置文件、精简的POM
 * 统一响应结果封装  
 * 统一异常处理
 * 简单的普通用户登录注册
