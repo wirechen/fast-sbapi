@@ -24,6 +24,7 @@ public enum ResultEnum{
     // 前端业务异常返回码
     ERROR_LOGIN(10001, "登录账号或密码错误"),
     NO_EXIST_USER(10002, "用户不存在"),
+    ERROR_ID(10003, "ID不存在"),
     ;
 
     private Integer code;
