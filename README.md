@@ -3,7 +3,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 
 ## 功能  
 > 已实现
-* 【重要】通过可视化脚手架一键生成SQL脚本、dataobject、repository、service及controller
+* ***通过可视化脚手架一键生成SQL脚本、dataobject、repository、service及controller***
 * 最具java风格的项目结构、配置文件、精简的POM
 * 统一响应结果封装  
 * 统一异常处理
