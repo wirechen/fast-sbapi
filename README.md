@@ -12,7 +12,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 * 基于logback的生产环境日志按天滚动记录
 * 常用基础方法抽象封装
 > TODO
-* 集成swaggerAPI文档
+* 集成swagger，自动生成API文档
 * 升级Spring Boot2.0
 
 ## 项目结构  
