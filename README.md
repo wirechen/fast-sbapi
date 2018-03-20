@@ -1,7 +1,7 @@
 ## 简介  
 FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。目前发布1.0版本，该仓库长期维护，也欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)，旨在为Java开发API的大众提供一个不错的选择。  
 ## 使用教程
-[![FastSb使用教程](https://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/ttttttttt.png?Expires=1521621370&OSSAccessKeyId=TMP.AQHFI4p7TILVnHdO6aVkS-fLutgqSD_weNBJAN3diSQrT2JEK3wBgc2Fk2qlADAtAhRWxWnAtoePZ9LLPcjqs6O3Ux8vdwIVANU-7nuDEYW_k7vRBBg16I5B_z-p&Signature=6Ks2dzw29atTyvr%2FT%2F95K6DfYQc%3D)](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)
+[![FastSb使用教程](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/ttttttttt.png?Expires=1521621513&OSSAccessKeyId=TMP.AQHFI4p7TILVnHdO6aVkS-fLutgqSD_weNBJAN3diSQrT2JEK3wBgc2Fk2qlADAtAhRWxWnAtoePZ9LLPcjqs6O3Ux8vdwIVANU-7nuDEYW_k7vRBBg16I5B_z-p&Signature=6BuyeIFrX2pRshZ19Et0uvosTSQ%3D)](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)
 
 ## 功能  
 > 已实现
