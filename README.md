@@ -1,7 +1,7 @@
 ## 简介  
 FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。目前发布1.0版本，该仓库长期维护，也欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)，旨在为Java开发API的大众提供一个不错的选择。  
 ## 使用教程
-[![FastSb使用教程](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/aaaaaaaaaaaa.png?Expires=1521622180&OSSAccessKeyId=TMP.AQHFI4p7TILVnHdO6aVkS-fLutgqSD_weNBJAN3diSQrT2JEK3wBgc2Fk2qlADAtAhRWxWnAtoePZ9LLPcjqs6O3Ux8vdwIVANU-7nuDEYW_k7vRBBg16I5B_z-p&Signature=9FvjcUA7ENt19OWm0cC0YlJMqLs%3D)](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)
+[![FastSb使用教程](https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-video.png)](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)
 
 ## 功能  
 > 已实现
@@ -18,7 +18,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 * 升级Spring Boot2.0
 
 ## 项目结构  
-<img src="http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-tree.png?Expires=1521360645&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=%2FPNWSIVgUfnavQ5X4EhUjj7RBEw%3D" width=400 height=520 />
+<img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-tree.png" width=400 height=520 />
 
 - aspect: AOP切面类
 - config: 项目配置
@@ -39,7 +39,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 
 ## 数据传输模型
 这里主要对dataobject的各个object的转化与传输做了一个模型。既然选择了用java开发API，那么我们必然是看中了java的严谨与高可维护性，java向来也不是快速开发的主导，项目中各种object的之间的相互转换看似繁琐复杂，但不可否认的是这样做为后期的维护与扩展打下了良好的基础。  
-![](http://wirechen-github.oss-cn-beijing.aliyuncs.com/readme/fast-api-dataobject.png?Expires=1521421872&OSSAccessKeyId=TMP.AQEjvPPc0N1o1J50rCQq6MWamrSjARke6FgL0OdTuoqoj3L8w-hwDXBvx8dZADAtAhRKEzs0CZFGtkj_7d2Iwkj8V78n7AIVANOD5SzujwIzPqkT-m4Eh0-08fe0&Signature=SrRef4eSm5dEvcJsaRb8sU2RnXQ%3D) 
+![](https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-flow.png) 
 客户端请求接口时传输RO(request object)，返回结果时接受VO(view object)，二者在HTTP传输过程中为json格式
 * Controller层对RO进行转化（根据业务需求转为DTO或者直接转为Model)  
 * Service层将DTO转为Model并传输给Repository层  
