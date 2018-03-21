@@ -24,8 +24,8 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 - config: 项目配置
 - controller: API路由控制层
 - dataobject: javebean对象
-    * dto: data transfer object数据传输对象(在controller-service-repository三层之间传输)
-    * model: 数据持久模型(对应数据库字段)
+    * dto: data transfer object数据传输对象(在controller-service-repository三层之间传输)  
+    * model: 数据持久模型(对应数据库字段)
     * ro: request object数据请求对象(前端传过来的数据的封装)
     * vo: view obejct视图对象(返回给前端数据的封装)
 - enum: 枚举类
