@@ -25,7 +25,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 - controller: API路由控制层
 - dataobject: javebean对象
     * dto: data transfer object数据传输对象(在controller-service-repository三层之间传输)
-    * model: 数据持久模型(对象数据库字段)
+    * model: 数据持久模型(对应数据库字段)
     * ro: request object数据请求对象(前端传过来的数据的封装)
     * vo: view obejct视图对象(返回给前端数据的封装)
 - enum: 枚举类
@@ -38,7 +38,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 
 
 ## 数据传输模型
-这里主要对dataobject的各个object的转化与传输做了一个模型。既然选择了用java开发API，那么我们必然是看中了java的严谨与高可维护性，java向来也不是快速开发的主导，项目中各种object的之间的相互转换看似繁琐复杂，但不可否认的是这样做为后期的维护与扩展打下了良好的基础。  
+这里主要对dataobject的各个object间的转换与传输做了一个模型。既然选择了用java开发API，那么我们必然是看中了java的严谨与高可维护性，java向来也不是快速开发的主导，项目中各种object的之间的相互转换看似繁琐复杂，但不可否认的是这样做为后期的维护与扩展打下了良好的基础。  
 ![](https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-flow.png) 
 客户端请求接口时传输RO(request object)，返回结果时接受VO(view object)，二者在HTTP传输过程中为json格式
 * Controller层对RO进行转化（根据业务需求转为DTO或者直接转为Model)  
@@ -71,8 +71,7 @@ create table user (
 ) comment '用户表';
 insert into user values(1,'管理员','123456','','13344445555',0,'2018-03-16 16:10:35','2018-03-16 16:10:39');
 ```
-4. 启动项目,浏览器打开`http://localhost:8080/api/v1/code/index`根据提示生成代码,具体操作请看首页视频
-5. 注意：如果运用到生产环境请将logback-spring.xml的注释全部去掉并保证有相应的日志文件生成目录和写文件的权限
+4. 启动项目,浏览器打开`http://localhost:8080/api/v1/code/index`根据提示生成代码,具体操作请看视频教程
 
 ## End
 希望大家 [Star](https://github.com/wirechen/fast-sbapi/stargazers) & [Fork](https://github.com/wirechen/fast-sbapi/network) 给予支持。
