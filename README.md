@@ -1,5 +1,5 @@
 ## 简介  
-FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。目前发布1.0版本，该仓库长期维护，也欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)，旨在为Java开发API的大众提供一个不错的选择。  
+FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。也欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)，旨在为Java开发API的大众提供一个不错的选择。请先花4分钟观看我用心录制的视频哦↓
 ## 使用教程[[完整版](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)]
 [![FastSb使用教程](https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-github-video-img.png)](http://v.youku.com/v_show/id_XMzQ3OTgxMzA0OA==.html)
 
@@ -14,8 +14,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 * 基于logback的生产环境日志按天滚动记录
 * 常用基础方法抽象封装
 > TODO
-* 集成swagger，自动生成API文档
-* 升级Spring Boot2.0
+* 集成swagger，生成API的同时自动生成API文档
 
 ## 项目结构  
 <img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-tree.png" width=400 height=520 />
@@ -53,7 +52,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 ## 快速开始
 1. 本项目使用了[lombok](http://blog.csdn.net/v2sking/article/details/73431364),所以请确保自己编译器安装了该插件
 2. 克隆项目
-3. 执行初始化脚本
+3. 执行初始化SQL脚本
 ```
 create database fastsbapiDB;
 use fastsbapiDB;
@@ -62,7 +61,7 @@ create table user (
 	id int not null auto_increment,
 	username varchar(100) not null comment '用户名',
 	password varchar(100) not null comment '登录密码',
-  email varchar(100) comment '联系邮箱',
+    email varchar(100) comment '联系邮箱',
 	phone varchar(20) comment '联系手机',
 	role tinyint(1) not null comment '用户角色, 0管理员/1普通用户',
 	create_time timestamp not null default current_timestamp comment '创建时间',
@@ -74,5 +73,14 @@ insert into user values(1,'管理员','123456','','13344445555',0,'2018-03-16 16
 4. 启动项目,浏览器打开`http://localhost:8080/api/v1/code/index`根据提示生成代码,具体操作请看视频教程
 
 ## End
-希望大家 [Star](https://github.com/wirechen/fast-sbapi/stargazers) & [Fork](https://github.com/wirechen/fast-sbapi/network) 给予支持。
+希望大家 [Star](https://github.com/wirechen/fast-sbapi/stargazers) & [Fork](https://github.com/wirechen/fast-sbapi/network) 给予支持。  
 
+---
+============================更新============================
+
+1. 我们公司的后台就是在该脚手架项目的基础上开发的，主要是给五个前端提供API服务（用户PC端、管理PC端、用户移动端、硬件设备端、小程序端），经过几个月的线上环境运行测试效果稳定。顺便展示一下我们公司后台的项目包结构和后台简易架构图吧。
+<img src="https://github.com/wirechen/github-readme/blob/master/img/smd1.png" width="250" hegiht="100" align=center />
+<img src="https://github.com/wirechen/github-readme/blob/master/img/smd2.png" align=center />  
+2. 该项目可能我不会再更新了，因为它单纯作为一个自动生成API脚手架项目的话这里有一个更智能的替代品，那就是Spring推出的更好更快更“傻瓜”的API脚手架项目：Spring Data Rest。感兴趣的朋友可以去官方看一看（[点这里](https://projects.spring.io/spring-data-rest/)），它可以让我们通过定义Model自动生成Restful风格的API。  
+
+最后，虽然该项目star和fork并不多（哈哈），但是还是要感谢大家的支持，我会继续坚持开源，坚持分享，猿类们我们一起共同进步吧！
