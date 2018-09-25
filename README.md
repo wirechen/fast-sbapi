@@ -81,6 +81,6 @@ insert into user values(1,'管理员','123456','','13344445555',0,'2018-03-16 16
 1. 我们公司的后台就是在该脚手架项目的基础上开发的，主要是给五个前端提供API服务（用户PC端、管理PC端、用户移动端、硬件设备端、小程序端），经过几个月的线上环境运行测试效果稳定。顺便展示一下我们公司后台的项目包结构和后台简易架构图吧。
 <img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/smd1.png" width="250" hegiht="100" align=center />
 <img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/smd2.png" align=center />  
-2. 该项目可能我不会再更新了，因为它单纯作为一个自动生成API脚手架项目的话这里有一个更智能的替代品，那就是Spring推出的更好更快更“傻瓜”的API脚手架项目：Spring Data Rest。感兴趣的朋友可以去官方看一看[点这里](https://projects.spring.io/spring-data-rest) ，它可以让我们通过定义Model自动生成Restful风格的API。  
+2. 该项目可能我不会再更新了，因为它单纯作为一个自动生成API脚手架项目的话这里有一个更智能的替代品，那就是Spring推出的更好更快更“傻瓜”的API脚手架项目：Spring Data Rest。感兴趣的朋友可以去官方[看一看](https://projects.spring.io/spring-data-rest)，它可以让我们通过定义Model自动生成Restful风格的API。  
 
 最后，虽然该项目star和fork并不多（哈哈），但是还是要感谢大家的支持，我会继续坚持开源，坚持分享，猿类们我们一起共同进步吧！
