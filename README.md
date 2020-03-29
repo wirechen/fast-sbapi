@@ -1,7 +1,7 @@
 ## 简介  
-FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目。也欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)，旨在为Java开发API的大众提供一个不错的选择。请先花4分钟观看我用心录制的视频哦↓
+FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目，借鉴了另一个优秀的开源项目：[spring-boot-api-project-seed](https://github.com/lihengming/spring-boot-api-project-seed)，增加了可视化脚手架，持久层用的SpringDataJPA，让用Java快速开发API不失为一个不错的选择，欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)。请先花4分钟观看我用心录制的视频哦↓
 ## 使用教程[[完整版](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)]
-[![FastSb使用教程](https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-github-video-img.png)](http://v.youku.com/v_show/id_XMzQ3OTgxMzA0OA==.html)
+[![FastSb使用教程](http://wirechen-image.test.upcdn.net/blog/8dc526346097d2582c5634a8c130ecb5.png)
 
 ## 功能  
 > 已实现
@@ -17,7 +17,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 * 集成swagger，生成API的同时自动生成API文档
 
 ## 项目结构  
-<img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-tree.png" width=400 height=520 />
+<img src="http://wirechen-image.test.upcdn.net/blog/a50366019efaaae0f560f720dbec1364.png" width=400 height=520 />
 
 - aspect: AOP切面类
 - config: 项目配置
@@ -38,7 +38,7 @@ FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul AP
 
 ## 数据传输模型
 这里主要对dataobject的各个object间的转换与传输做了一个模型。既然选择了用java开发API，那么我们必然是看中了java的严谨与高可维护性，java向来也不是快速开发的主导，项目中各种object的之间的相互转换看似繁琐复杂，但不可否认的是这样做为后期的维护与扩展打下了良好的基础。  
-![](https://raw.githubusercontent.com/wirechen/github-readme/master/img/FastSbAPI-flow.png) 
+![](http://wirechen-image.test.upcdn.net/blog/dfd13ec62e7ecfd3b335603dc9b4aa96.png) 
 客户端请求接口时传输RO(request object)，返回结果时接受VO(view object)，二者在HTTP传输过程中为json格式
 * Controller层对RO进行转化（根据业务需求转为DTO或者直接转为Model)  
 * Service层将DTO转为Model并传输给Repository层  
@@ -79,8 +79,8 @@ insert into user values(1,'管理员','123456','','13344445555',0,'2018-03-16 16
 ============================更新============================
 
 1. 我们公司的后台就是在该脚手架项目的基础上开发的，主要是给五个前端提供API服务（用户PC端、管理PC端、用户移动端、硬件设备端、小程序端），经过几个月的线上环境运行测试效果稳定。顺便展示一下我们公司后台的项目包结构和后台简易架构图吧。
-<img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/smd1.png" width="250" hegiht="100" align=center />
-<img src="https://raw.githubusercontent.com/wirechen/github-readme/master/img/smd2.png" align=center />  
+<img src="http://wirechen-image.test.upcdn.net/blog/2118c254be305043e7d3ae0a3050dd3f.png" width="250" hegiht="100" align=center />
+<img src="http://wirechen-image.test.upcdn.net/blog/a12a0cbcd6d2fa1fc4f926276b317178.png" align=center />  
 2. 该项目可能我不会再更新了，因为它单纯作为一个自动生成API脚手架项目的话这里有一个更智能的替代品，那就是Spring推出的更好更快更“傻瓜”的API脚手架项目：Spring Data Rest。它可以让我们通过定义Model自动生成Restful风格的API，感兴趣的朋友可以去官方看一看，地址：https://projects.spring.io/spring-data-rest/
 
-最后，虽然该项目star和fork并不多（哈哈），但是还是要感谢大家的支持，我会继续坚持开源，坚持分享，猿类们我们一起共同进步吧！
+感谢大家的支持，我会继续坚持开源，坚持分享，猿类们我们一起共同进步吧！
