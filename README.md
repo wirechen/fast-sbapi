@@ -1,7 +1,7 @@
 ## 简介  
 FastSbAPI主要是基于SpringBoot + SpringDataJPA打造的快速构建Restul API的项目，借鉴了另一个优秀的开源项目：[spring-boot-api-project-seed](https://github.com/lihengming/spring-boot-api-project-seed)，增加了可视化脚手架，持久层用的SpringDataJPA，让用Java快速开发API不失为一个不错的选择，欢迎大家提出[issue](https://github.com/wirechen/fast-sbapi/issues)或提交[pr](https://github.com/wirechen/fast-sbapi/pulls)。请先花4分钟观看我用心录制的视频哦↓
 ## 使用教程[[完整版](http://v.youku.com/v_show/id_XMzQ3ODkxMTYwMA==.html?spm=a2h3j.8428770.3416059.1)]
-[![FastSb使用教程](http://wirechen-image.test.upcdn.net/blog/8dc526346097d2582c5634a8c130ecb5.png)
+![FastSb使用教程](http://wirechen-image.test.upcdn.net/blog/8dc526346097d2582c5634a8c130ecb5.png)
 
 ## 功能  
 > 已实现
